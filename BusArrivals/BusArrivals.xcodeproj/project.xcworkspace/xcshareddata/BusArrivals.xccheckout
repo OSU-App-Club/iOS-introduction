@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B9AC42D-B777-4C9A-A5B2-A8412B0310C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BusArrivals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>265F262C-A304-4DDD-9A31-4D1780084F5D</key>
+		<string>https://github.com/OSU-App-Club/iOS-introduction.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BusArrivals/BusArrivals.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>265F262C-A304-4DDD-9A31-4D1780084F5D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OSU-App-Club/iOS-introduction.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>265F262C-A304-4DDD-9A31-4D1780084F5D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>265F262C-A304-4DDD-9A31-4D1780084F5D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-introduction</string>
+		</dict>
+	</array>
+</dict>
+</plist>
