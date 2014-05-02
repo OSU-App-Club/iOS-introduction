@@ -208,6 +208,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "OSU App Club";
 				TargetAttributes = {
+					834CA937190D965A00CB3F06 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					834CA958190D965B00CB3F06 = {
 						TestTargetID = 834CA937190D965A00CB3F06;
 					};

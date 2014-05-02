@@ -22,6 +22,7 @@
     _stopID = stopID;
     
     [self updateArrivalsWithStopID:stopID];
+    self.title = stopID.stringValue;
 }
 
 - (void) setArrivals:(NSArray *)arrivals{
@@ -36,7 +37,7 @@
 - (void) viewDidLoad{
     [super viewDidLoad];
     
-    [self updateArrivalsWithStopID:@(13731)];
+    //[self updateArrivalsWithStopID:@(13731)];
 }
 
 - (void) updateArrivalsWithStopID:(NSNumber*) stopID{

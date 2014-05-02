@@ -17,7 +17,6 @@
     self.locManager = [[CLLocationManager alloc] init];
     self.locManager.delegate = self;
     
-    
     NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"11111111-1111-1111-1111-111111111111"];
     self.searchRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"busStop"];
     
@@ -28,7 +27,6 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    
     
     // Stop looking for iBeacons
     [self.locManager stopRangingBeaconsInRegion:self.searchRegion];
@@ -61,9 +59,10 @@
 #pragma mark - CLLocationManager Delegate
 - (void) locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region{
     
-    ViewController *mainVC = (ViewController*) self.window.rootViewController;
+    ViewController *mainVC = [[(UINavigationController*) self.window.rootViewController viewControllers] firstObject];
 
     if (beacons.count>0) {
+        NSLog(@"Beacon: %@",beacons.firstObject);
         CLBeacon *beacon =  beacons.firstObject;
         if (beacon.proximity == CLProximityImmediate || beacon.proximity == CLProximityNear) {
             mainVC.stopID = beacon.minor; // This will update the display
@@ -71,6 +70,9 @@
             NSLog(@"Beacon is not close enough");
         }
     }
+}
+- (void) locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error{
+    NSLog(@"Ranging Error: %@",error);
 }
 
 @end
